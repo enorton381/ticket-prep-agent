@@ -1,0 +1,42 @@
+{
+  "name": "jira-ticket-monitor",
+  "version": "1.0.0",
+  "description": "Background agent that monitors Jira board for new tickets and sends desktop notifications",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "jira",
+    "monitor",
+    "notifications",
+    "agent"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "^0.30.2",
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "enquirer": "^2.4.1",
+    "fast-glob": "^3.3.3",
+    "jira-client": "^8.2.2",
+    "node-cron": "^3.0.3",
+    "node-fetch": "^2.7.0",
+    "node-notifier": "^10.0.1",
+    "open": "^10.1.0",
+    "simple-git": "^3.36.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "@types/node-cron": "^3.0.11",
+    "@types/node-notifier": "^8.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
