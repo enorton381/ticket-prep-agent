@@ -114,7 +114,7 @@ export class ClaudeClient {
   private parseEvaluationResponse(responseText: string): TicketEvaluation {
     // Parse new format: "Should prepare branch?"
     const shouldPrepareMatch = responseText.match(/should\s+prepare\s+branch[?:]?\s*(yes|no)/i);
-    const shouldPrepare = shouldPrepareMatch ? shouldPrepareMatch[1].toLowerCase() === 'yes' : true;
+    const shouldPrepare = shouldPrepareMatch ? shouldPrepareMatch[1].toLowerCase() === 'yes' : false;
 
     // Extract work type (look for "Work type:" section)
     const workTypeMatch = responseText.match(/work\s+type[:\s]+(.+?)(?=\n|$)/i);
