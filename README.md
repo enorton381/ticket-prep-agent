@@ -7,6 +7,7 @@ This agent monitors Jira boards for tickets in the "To Do" status. For each tick
 3. **Creates feature branch** - Clones repo and creates a properly named branch
 4. **Analyzes codebase** - Detects tech stack, frameworks, dependencies, project structure
 5. **Generates CONTEXT.md** - Comprehensive context document with ticket details and codebase analysis
+(original idea was to write a CLAUDE.md, but testing has shown some repositories don't allow an updated CLAUDE.md to be pushed)
 6. **Commits and pushes** - Automated commit to remote repository
 7. **Updates Jira** - Adds comment with branch link
 
